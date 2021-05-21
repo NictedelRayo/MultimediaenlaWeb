@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Toggle Switch</title>
+	    <link rel="stylesheet" href="css/estilos.css">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	</head>
+	<body style="background-color:white; margin-bottom: 100px;">
+		<h1 style="color:#4B9FA9; text-align:center;">Toggle Switch</h1>
+		<hr style="margin-bottom: 20px;">
+		<div style="margin-bottom: 50px;"></div>
+		<p>
+			En este tutorial crearemos un Toggle Switch, el cual tiene la misma función que un checkbox pero es mucho más moderno y atractivo visualmente como el que tenemos a continuación. <br>
+		</p>
+
+		<div style="text-align:center;">
+			<label class="switch">
+			  <input checked="checked" type="checkbox">
+			  <span class="slider"></span>
+			</label>
+		</div>
+
+		<p>
+			Para empezar definiremos el html. Usamos las etiquetas label e input de tipo checkbox y un span que nos servirá para asignar los demás estilos css.	
+		</p>
+
+		<div align="center">
+			<img src="imagenes/img1.png" style="border-radius: 5px;"  width="400">
+		</div>
+		
+		<p>
+			Luego de esto obtenemos un checkbox común como el siguiente:
+			<label class="">
+			  <input checked="checked" type="checkbox">
+			  <span class=""></span>
+			</label>
+		</p>
+		<p>
+			Ahora asignaremos los estilos. Primero formateremos el label, ya que nos servirá como contenedor. Le asignaremos una posición relativa y asignamos el tamaño de ancho y alto que queremos que tenga nuestro switch.
+		</p>
+
+		<div align="center">
+			<img src="imagenes/img2.png" style="border-radius: 5px;"  width="400">
+		</div>
+
+		<p>
+			Ocultamos el checkbox de html.
+		</p>
+
+		<div align="center">
+			<img src="imagenes/img3.png" style="border-radius: 5px;"  width="400">
+		</div>
+
+		<p>
+			Formateamos la caja del interruptor sobre la cual se deslizará la perilla de control o slider, le asignamos un color de fondo, sus esquinas las redondeamos a 50px y ponemos que el tiempo de la transición será de 0.4 segundos.
+		</p>
+
+		<div align="center">
+			<img src="imagenes/img4.png" style="border-radius: 5px;"  width="400">
+		</div>
+
+		<p>
+			Ahora pintamos la perilla de control o slider usando el selector before, le asignamos el tamaño que tendrá que debe de ser menor al del contenedor que creamos al inicio. Le asignamos un color, en este caso blanco, lo redondeamos al 50% e igualmente ponemos que la transición de este durará 0.4 segundos.
+		</p>
+
+		<div align="center">
+			<img src="imagenes/img5.png" style="border-radius: 5px;"  width="400">
+		</div>
+
+		<p>
+			Cambiamos el color de fondo del contenedor cuando el checkbox esta activado.
+		</p>
+
+		<div align="center">
+			<img src="imagenes/img6.png" style="border-radius: 5px;"  width="400">
+		</div>
+
+		<p>
+			Para finalizar creamos la transición. Deslizamos el slider a la derecha cuando el checkbox esta activado.
+		</p>
+
+		<div align="center">
+			<img src="imagenes/img8.png" style="border-radius: 5px;"  width="400">
+		</div>
+
+		<p>
+			Y el resultado sería el siguiente:
+		</p>
+		<div style="text-align:center;">
+			<label class="switch">
+			  <input type="checkbox">
+			  <span class="slider"></span>
+			</label>
+		</div>
+
+		<div style="margin-top: 50px; margin-right: 50px;" align="right"><a href="index.html" class="boton2"> Regresar</a></div>
+
+	</body>
+</html>

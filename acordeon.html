@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Acordeón Desplegable</title>
+	    <link rel="stylesheet" href="css/estilos.css">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	</head>
+	<body style="background-color:white; margin-bottom: 100px;">
+		<h1 style="color:#4B9FA9; text-align:center;">Acordeón Desplegable</h1>
+		<hr style="margin-bottom: 20px;">
+		<div style="margin-bottom: 50px;"></div>
+		
+			<p>
+				En este tutorial crearemos un Acordeón el cual sirve para desplegar distinta información de forma ordenada, se animará las áreas de contenido al abrir y cerrar.
+			</p>
+			<p>
+				Para iniciar, crearemos el siguiente código html, usaremos casillas de verificación. Todo se envolverá en un contenedor con la clase ac-container. Para cada elemento, tendremos una casilla de verificación, una etiqueta y un article que es la sección de contenido de ese elemento:
+			</p>
+
+			<div align="center">
+				<img src="imagenes/img9.png" style="border-radius: 5px;"  width="500">
+			</div>
+			<p>
+				Definimos el ancho del acordeón y lo centramos.
+			</p>
+			<div align="center">
+				<img src="imagenes/img10.png" style="border-radius: 5px;"  width="400">
+			</div>
+
+			<p>
+				Ahora hacemos que las "label" aparezcan como botones para poder darles clic. Le agregamos sombras de cuadro para crear el borde, le agregamos un padding, un color a la letra y un tamaño a el título de cada sección.
+			</p>
+			<div align="center">
+				<img src="imagenes/img11.png" style="border-radius: 5px;"  width="500">
+			</div>
+
+			<p>
+				Al pasar el mouse haremos que el fondo de la etiqueta cambie de color al igual que el color de la letra.
+			</p>
+			<div align="center">
+				<img src="imagenes/img12.png" style="border-radius: 5px;"  width="400">
+			</div>
+
+			<p>
+				Ahora indicamos que cuando se haga clic en una etiqueta esta cambiará de color al igual que la letra.
+			</p>
+			<div align="center">
+				<img src="imagenes/img13.png" style="border-radius: 5px;"  width="500">
+			</div>
+
+			<p>
+				Agregamos el simbolo "+" a la etiqueta para que se muestre cuando a esta no se le ha dado clic.
+			</p>
+			<div align="center">
+				<img src="imagenes/img14.png" style="border-radius: 5px;"  width="500">
+			</div>
+
+			<p>
+				Añadimos el simbolo "-" para que aparezca cuando se le ha dado clic a la etiqueta.
+			</p>
+			<div align="center">
+				<img src="imagenes/img15.png" style="border-radius: 5px;"  width="500">
+			</div>
+
+			<p>
+				Indicamos que no queremos que se muestre la casilla de verificación (input).
+			</p>
+			<div align="center">
+				<img src="imagenes/img16.png" style="border-radius: 5px;"  width="300">
+			</div>
+
+			<p>
+				Ahora para el área del contenido le indicamos un color de fondo, tendrá una altura inicial de 0px y se ocultará cualquier desbordamiento. Agregaremos una transición para la altura y la sombra del cuadro. La transición que estamos agregando aquí actuará al cerrar el contenido. 
+			</p>
+			<div align="center">
+				<img src="imagenes/img17.png" style="border-radius: 5px;"  width="500">
+			</div>
+
+			<p>
+				Definimos otra transición para cuando una de las etiquetas es seleccionada. 
+			</p>
+			<div align="center">
+				<img src="imagenes/img18.png" style="border-radius: 5px;"  width="500">
+			</div>
+
+			<p>
+				Indicamos el tamaño de la letra que tendrá el contenido y le agregamos un padding.
+			</p>
+			<div align="center">
+				<img src="imagenes/img19.png" style="border-radius: 5px;"  width="500">
+			</div>
+
+			<p>
+				Y por último le damos un alto a la sección donde se verá el contenido seleccionado.
+			</p>
+			<div align="center">
+				<img src="imagenes/img20.png" style="border-radius: 5px;"  width="500">
+			</div>
+			<p>
+				Y el resultado sería el siguiente:
+			</p>
+			<section class="ac-container">
+				<div>
+					<input id="ac-1" name="accordion-1" type="checkbox" />
+					<label for="ac-1">Títilo 1</label>
+					<article class="ac-small">
+						<p>Contenido1...</p>
+					</article>
+				</div>
+				<div>
+					<input id="ac-2" name="accordion-1" type="checkbox" />
+					<label for="ac-2">Título 2</label>
+					<article class="ac-small">
+						<p>Contenido2...</p>
+					</article>
+				</div>
+				<div>
+					<input id="ac-3" name="accordion-1" type="checkbox" />
+					<label for="ac-3">Título 3</label>
+					<article class="ac-small">
+						<p>Contenido3...</p>
+					</article>
+				</div>
+			</section>
+
+
+		<div style="margin-top: 50px; margin-right: 50px;" align="right"><a href="index.html" class="boton2"> Regresar</a></div>
+
+	</body>
+</html>

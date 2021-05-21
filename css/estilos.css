@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 18px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.boton2{
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+
+.boton2:hover{
+    color: #ffffff;
+    background-color: #3E6194;
+  }
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 100px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card{
+    background-color: white;
+    width: 330px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 30px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+
+/***************** TOGGLE SWICH *****************/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 96px;
+  height: 50px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 50px;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 42px;
+  width: 42px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #43DB31;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(45px);
+  -ms-transform: translateX(45px);
+  transform: translateX(45px);
+}
+
+/*****************  *****************/
+.ac-container{
+    width: 700px;
+    margin: 10px auto 10px auto;
+}
+
+.ac-container label{
+    padding: 5px 10px;
+    position: relative;
+    display: block;
+    height: 30px;
+    cursor: pointer;
+    color: #777;
+    font-size: 19px;
+    box-shadow: 
+        0px 0px 0px 1px rgba(155,155,155,0.3), 
+        1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+        0px 1px 1px rgba(0,0,0,0.1);
+}
+
+.ac-container label:hover{
+    background-color: #943E5E;
+    color: white;
+}
+
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover{
+    background: #943E5E;
+    color: white;
+}
+
+.ac-container label:after,
+.ac-container input:checked + label:after{
+    content: '\02795';
+    font-size: 15px;
+    float: right;
+    margin-left: 5px;  
+}
+
+.ac-container input:checked + label:after{
+    content: "\2796";
+}
+
+.ac-container input{
+    display: none;
+}
+
+.ac-container article{
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;
+    transition: 
+        height 0.3s ease-in-out, 
+        box-shadow 0.6s linear;
+}
+.ac-container input:checked ~ article{
+    transition: 
+        height 0.5s ease-in-out, 
+        box-shadow 0.1s linear;
+    box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+
+.ac-container article p{
+    font-size: 14px;
+    padding: 20px;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+
+.ac-container input:checked ~ article.ac-small{
+    height: 140px;
+}
+
+
+
+/***************** Menu Desplegable *****************/
+#header {
+    margin: auto;
+    width: 500px;
+    font-family: 'Raleway', sans-serif;;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+.nav li a {
+    background-color: #000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+
+}
+
+.nav > li{
+    float:left;
+}
+
+.nav li a:hover{
+    background-color: #3E6194;
+}
+
+.nav li ul {
+    display:none;
+    position: fixed;
+    min-width: 140px;
+}
+.nav li:hover >ul{
+    display:block;
+}
+.nav li ul li{
+    position: relative;
+}
+.nav li ul li ul{
+    right: -10px;
+    top: 0px;
+}
